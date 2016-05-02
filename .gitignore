@@ -1,16 +1,8 @@
-<<<<<<< HEAD
+
 node_modules/*
 node_modules
 .sass-cache
 build/*
 build
 .idea
-=======
-node_modules/*
-node_modules
-.sass-cache
-build/*
-build
-.idea
->>>>>>> 654bb1b5fee4945f33677e98c0b4fe1293a99482
 .idea/
