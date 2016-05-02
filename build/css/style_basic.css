@@ -1,0 +1,208 @@
+/* helping adds*/
+.clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden; }
+
+.cfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clear: both; }
+
+.juster {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden; }
+
+.jfix-after:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden; }
+
+.vfix {
+  height: 100%;
+  width: 0px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.vfix-before:before {
+  content: '';
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
+.hidden-block {
+  position: absolute;
+  left: -99999em;
+  top: -99999em; }
+
+/* /helping adds*/
+/* base styles*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+*, body, html {
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+  max-height: 9001em; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  width: 100%;
+  min-width: 320px;
+  font-family: 'MuseoSans',sans-serif;
+  font-weight: 500;
+  background: #fff;
+  color: #3d3d3d;
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+  /* styles for wp-admin panel */
+  /* /styles for wp-admin panel */ }
+  body.customize-support .wp-panel-show {
+    top: 32px; }
+
+img {
+  vertical-align: bottom;
+  border: 0;
+  max-width: 100%; }
+
+/* adapted styles for wp-admin panel */
+@media screen and (max-width: 782px) {
+  body.customize-support .wp-panel-show {
+    top: 46px; }
+  #wpadminbar {
+    position: fixed !important; } }
+
+/* /adapted styles for wp-admin panel */
+/* /base styles */
+/* wraps styling*/
+.mbox {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+.mbox:after {
+  content: "";
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 0;
+  overflow: hidden;
+  display: block; }
+
+/* /wraps styling*/
+.footer_placeholder {
+  height: 200px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden; }
+
+::-webkit-input-placeholder {
+  color: #212121; }
+
+:-moz-placeholder {
+  color: #212121; }
+
+::-moz-placeholder {
+  color: #212121; }
+
+:-ms-input-placeholder {
+  color: #212121; }
+
+/*End Layout*/
+/*fonts*/
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-100.eot");
+  src: url("/fonts/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-100.woff") format("woff"), url("/fonts/MuseoSansCyrl-100.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-100.svg#MuseoSans") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl_0.eot");
+  src: url("/fonts/MuseoSansCyrl_0.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl_0.woff") format("woff"), url("/fonts/MuseoSansCyrl_0.ttf") format("truetype"), url("/fonts/MuseoSansCyrl_0.svg#MuseoSans") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl_1.eot");
+  src: url("/fonts/MuseoSansCyrl_1.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl_1.woff") format("woff"), url("/fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("/fonts/MuseoSansCyrl_1.svg#MuseoSans") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl_2.eot");
+  src: url("/fonts/MuseoSansCyrl_2.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl_2.woff") format("woff"), url("/fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("/fonts/MuseoSansCyrl_2.svg#MuseoSans") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-900.eot");
+  src: url("/fonts/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-900.woff") format("woff"), url("/fonts/MuseoSansCyrl-900.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-900.svg#MuseoSans") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-100Italic.eot");
+  src: url("/fonts/MuseoSansCyrl-100Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-100Italic.woff") format("woff"), url("/fonts/MuseoSansCyrl-100Italic.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-100Italic.svg#MuseoSans") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-300Italic.eot");
+  src: url("/fonts/MuseoSansCyrl-300Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-300Italic.woff") format("woff"), url("/fonts/MuseoSansCyrl-300Italic.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-300Italic.svg#MuseoSans") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-500Italic.eot");
+  src: url("/fonts/MuseoSansCyrl-500Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-500Italic.woff") format("woff"), url("/fonts/MuseoSansCyrl-500Italic.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-500Italic.svg#MuseoSans") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-700Italic.eot");
+  src: url("/fonts/MuseoSansCyrl-700Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("/fonts/MuseoSansCyrl-700Italic.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-700Italic.svg#MuseoSans") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/fonts/MuseoSansCyrl-900Italic.eot");
+  src: url("/fonts/MuseoSansCyrl-900Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("/fonts/MuseoSansCyrl-900Italic.ttf") format("truetype"), url("/fonts/MuseoSansCyrl-900Italic.svg#MuseoSans") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+/*/fonts*/
